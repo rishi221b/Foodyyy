@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+</head>
+
+<body onload="myload()">
+    <header>
+        <a href="#" class="logo"><i class="myFood1-utensils"></i>Foodyyy</a>
+        <nav class="navbar">
+            <a class="active" href="./home.html">Home</a>
+            <a href="./dishes.html">Dishes</a>
+            <a href="./contact.html">Contact us</a>
+            <a href="#">Orders</a>
+            <a href="./index.html">Logout</a>
+        </nav>
+        <div class="icons">
+            <a href="login.html" class="myFood-sign-in-alt"></a>
+
+        </div>
+    </header>
+
+    <!--Home section start-->
+    <section class="home" id="home-section">
+        <!--Add-->
+        <div class="add">
+            <div class="add-container">
+                <img src="./Images/banner/burger banner.jpg">
+                <div class="textimg">
+                    <h2>30% off on your<br> first order</h2>
+                    <a href="./dominos.html"><button class="ordr">Order Now</button></a>
+                </div>
+
+            </div>
+        </div>
+        <!--Add ends-->
+        <!--Specials-->
+        <div class="spl">
+            <h2>Our Specials</h2>
+        </div>
+        <div class="table">
+            <a href="./dishes.html"><img src="./Images/Dishes/pizza1.jpg" height="150">
+                <h4>Indian Pizza</h4>
+            </a>
+            <a href="./dishes.html"><img src="./Images/Dishes/pizza2.jpg" height="150">
+                <h4>American Pizza</h4>
+            </a>
+            <a href="./dishes.html"><img src="./Images/Dishes/burger.jpg" height="150">
+                <h4>Burger</h4>
+            </a>
+            <a href="./dishes.html"><img src="./Images/Dishes/pasta.jpg" height="150">
+                <h4>Pasta</h4>
+            </a>
+        </div>
+        <div class="top-re">
+            <h2>Top Restaurants</h2>
+        </div>
+        <div class="table1">
+            <a href="./Barbeque.html"><img src="./Images/Restaurants/barbeque.jpg" height="150">
+                <h4>Barbeque</h4>
+                <p>tandoori, biryani, Starters</p>
+            </a>
+            <a href="./mcDonalds.html"><img src="./Images/Restaurants/mcDonalds.jpg" height="150">
+                <h4>McDonalds</h4>
+                <p>Burger, Fries</p>
+            </a>
+            <a href="./dominos.html"><img src="./Images/Restaurants/dominos.jpg" height="150">
+                <h4>Domino's</h4>
+                <p>Pizza, Burger</p>
+            </a>
+        </div>
+        <div class="container-grocery">
+            <img src="./Images/banner/grocery-delivery.png" alt="Man" style="width:100%;">
+            <div class="text-block">
+                <h2>HELLO!</h2>
+                <h4>Anything you need, delivered</h4>
+                <p>Get your food at your door step<br>
+                    Stay Home and Enjoy our services.</p>
+            </div>
+
+        </div>
+        <section class="barb" id="biryani">
+            <h1 class="barbeque">Top Restaurants</h1>
+            <hr class="line">
+            <div class="box-container">
+                <div class="box">
+                    <a href="./barbeque.html"><img src="./Images/Restaurants/barbeque.jpg"></a>
+                    <h3>Barbeque</h3>
+                    <div class="stars">
+                        <i class="myFood-star"></i>
+                        <i class="myFood-star"></i>
+                        <i class="myFood-star"></i>
+                        <i class="myFood-star"></i>
+                        <i class="myFood-star-half-alt"></i>
+                        <br>
+                        <p>Starters,biryani,tandoori</p>
+
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="./mcDonalds.html"><img src="./Images/Restaurants/mcDonalds.jpg"></a>
+                    <h3>McDonalds</h3>
+                    <div class="stars">
+                        <i class="myFood-star"></i>
+                        <i class="myFood-star"></i>
+                        <i class="myFood-star"></i>
+                        <i class="myFood-star"></i>
+                        <i class="myFood-star-half-alt"></i>
+                        <br>
+                        <p>Starters,biryani,tandoori</p>
+
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="./dominos.html"><img src="./Images/Restaurants/dominos.jpg"></a>
+                    <h3>Domino's</h3>
+                    <div class="stars">
+                        <i class="myFood-star"></i>
+                        <i class="myFood-star"></i>
+                        <i class="myFood-star"></i>
+                        <i class="myFood-star"></i>
+                        <i class="myFood-star-half-alt"></i>
+                        <br>
+                        <p>Pizza ,Burger, Bread</p>
+
+                    </div>
+                </div>
+                
+        </section>
+
+
+    </section>
+        <script>
+        let menu = document.querySelector('#menu-bars');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+        window.onscroll = () => {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('active');
+        }
+
+        const btn = document.querySelector("button");
+        const editBtn = document.querySelector(".edit");
+
+        btn.onclick = () => {
+            widget.style.display = "none";
+            post.style.display = "block";
+            editBtn.onclick = () => {
+                widget.style.display = "block";
+                post.style.display = "none";
+            }
+            return false;
+        }
+        function closeNav() {
+            document.getElementById("about").style.width = "0%";
+        }
+    </script>
+
+</body>
+
+</html>

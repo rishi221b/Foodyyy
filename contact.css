@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+:root {
+    --green: lightgreen;
+    --black: black;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+html {
+    font-size: 62.5%;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow)
+}
+
+header .logo {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder
+}
+
+header .logo i {
+    color: #ff4500
+}
+
+header .navbar a {
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color)
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+    color: #fff;
+    background: #ff4500
+}
+
+header .icons a,
+header .icons i {
+    cursor: pointer;
+    margin: left .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #000;
+    border-radius: 50%;
+    background: #eee
+}
+
+header .icons a:hover,
+header .icons i:hover {
+    color: #fff;
+    background: #ff4500;
+    transform: rotate(360deg)
+}
+
+header .icons #menu-bars {
+    display: none
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    font-size: medium;
+    margin-top: 5%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition:0.5s;
+}
+
+.row{
+    width:60%;
+    height:600px;
+    color:black;
+    background-color: gainsboro;
+    background-image: url(./Images/Background/contactbg.jpg);
+    background-repeat: no-repeat;
+    background-size: 900px;
+    padding-left: 180px;
+    padding-top:180px;
+}
+.row i{
+    color:orangered;
+    margin:5px;
+}
+.box{
+    width:480px;
+    height: 300px;
+    padding:15px;
+    background-color:gainsboro
+}
+.contact{
+    float:right;
+    height: 600px;
+    width: 40%;
+    margin: 20px;
+    padding-top:40px;
+    text-align: center;
+    background-color:rgb(253, 218, 176);
+}
+.form{
+   
+    color: black;
+    margin-top:10px;
+    width: 100%;
+   
+    float: left;
+   
+    
+}
+.uname{
+
+    height:30px;
+    width: 350px;
+    
+    border:2px solid black;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.submit{
+    height:30px;
+    padding: 5px;
+    background-color:orangered;
+    border:none;
+    color:white;
+    border-radius:5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.formtext{
+    
+    height :300px;
+    width:400px;
+    border:2px solid black;
+
+}
+#formLabel{
+    display: flex;
+    justify-self: left;
+    justify-content: left;
+    text-align: center;
+}
+@media (max-width:768px) {
+    header .icons #menu-bars {
+        display: inline-block
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        border-bottom: .1rem solid rgba(0, 0, 0, .2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0)
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)w
+    }
+
+    header .navbar a {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee
+    }
+}
